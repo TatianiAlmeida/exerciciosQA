@@ -1,0 +1,115 @@
+***CENARIO REALIZAR LOGIN EM SITE***
+DADO que o usuário acessou url "http://automationpractice.com/index.php?controller=authentication&back=my-account"
+ENTÃO clicou no campo "email address"
+E inseriu um email Valido
+QUANDO Clicou em "Create an account"
+ENTÃO entrou em pagina de cadastro
+ENTÃO a pagina de cadastro deve ser exibida
+
+***CENARIO PREENCHER INFORMAÇÕES DO CADASTRO - Your personal information - Mr - Sem checkbox***
+DADO que o usuario entrou na pagina "CREATE AN ArCOUNT"
+E colocou as informaçoes pessoais
+QUANDO selecionou a opção Mr
+E inseriu "Firts Name" e "Last Name" e "Email" e "Passaword"
+QUANDO informou uma data valida em "Date of Birth"
+E não clicou em nenhum checkbox adicional
+ENTÃO deve ser possivel prosseguir com cadastro
+
+**CENARIO PREENCHER INFORMAÇÕES DO CADASTRO - Your personal information - Mr - checkbox "Sign up for our newsletter!"***
+DADO que o usuario entrou na pagina "CREATE AN ArCOUNT"
+E colocou as informaçoes pessoais
+QUANDO selecionou a opção Mr
+E inseriu "Firts Name" E "Last Name" E "Email" E "Passaword"
+QUANDO informou uma data valida em "Date of Birth"
+E clicou na opção "Sign up for our newsletter!"
+ENTÃO deve ser possivel prosseguir com cadastro
+
+**CENARIO PREENCHER INFORMAÇÕES DO CADASTRO - Your personal information - Mr - checkbox "Receive special offers from our partners!"***
+DADO que o usuario entrou na pagina "Create AN ArCOUNT"
+E colocou as informaçoes pessoais
+QUANDO selecionou a opção Mr
+E inseriu "Firts Name" E "Last Name" E "Email" E "Passaword"
+QUANDO informou uma data valida em "Date of Birth"
+E clicou na opção "Receive special Offers from our partners!"
+ENTÃO deve ser possivel prosseguir com cadastro
+
+**CENARIO PREENCHER INFORMAÇÕES DO CADASTRO - Your personal information - Mr - checkbox todas opções***
+DADO que o usuario entrou na pagina "CREATE AN ArCOUNT"
+E colocou as informaçoes pessoais
+Quando selecionou a opção Mr
+E inseriu "Firts Name" E "Last Name" E "Email" E "Passaword"
+QUANDO informou uma data valida em "Date of Birth"
+E clicou na opção "Sign up for our newsletter!"
+E clicou na opção "Receive special Offers from our partners!"
+ENTÃO deve ser possivel prosseguir com cadastro
+
+***CENARIO PREENCHER INFORMAÇÕES DO CADASTRO - Your personal information - Mrs - Sem checkbox***
+DADO que o usuario entrou na pagina "CREATE AN ArCOUNT"
+E colocou as informaçoes pessoais
+QUANDO selecionou a opção Mrs
+E inseriu "Firts Name" e "Last Name" e "Email" e "Passaword"
+QUANDO informou uma data valida em "Date of Birth"
+E não clicou em nenhum checkbox adicional
+ENTÃO deve ser possivel prosseguir com cadastro
+
+**CENARIO PREENCHER INFORMAÇÕES DO CADASTRO - Your personal information - Mrs - checkbox "Sign up for our newsletter!"***
+DADO que o usuario entrou na pagina "CREATE AN ArCOUNT"
+E colocou as informaçoes pessoais
+QUANDO selecionou a opção Mrs
+E inseriu "Firts Name" E "Last Name" E "Email" E "Passaword"
+QUANDO informou uma data valida em "Date of Birth"
+E clicou na opção "Sign up for our newsletter!"
+ENTÃO deve ser possivel prosseguir com cadastro
+
+**CENARIO PREENCHER INFORMAÇÕES DO CADASTRO - Your personal information - Mrs - checkbox "Receive special offers from our partners!"***
+DADO que o usuario entrou na pagina "Create AN ArCOUNT"
+E colocou as informaçoes pessoais
+QUANDO selecionou a opção Mrs
+E inseriu "Firts Name" E "Last Name" E "Email" E "Passaword"
+QUANDO informou uma data valida em "Date of Birth"
+E clicou na opção "Receive special Offers from our partners!"
+ENTÃO deve ser possivel prosseguir com cadastro
+
+**CENARIO PREENCHER INFORMAÇÕES DO CADASTRO - Your personal information - Mrs - checkbox todas opções***
+DADO que o usuario entrou na pagina "CREATE AN ArCOUNT"
+E colocou as informaçoes pessoais
+Quando selecionou a opção Mrs
+E inseriu "Firts Name" E "Last Name" E "Email" E "Passaword"
+QUANDO informou uma data valida em "Date of Birth"
+E clicou na opção "Sign up for our newsletter!"
+E clicou na opção "Receive special Offers from our partners!"
+ENTÃO deve ser possivel prosseguir com cadastro 
+
+***CENARIO PREENCHAR INFORMAÇÕES DO CADASTRO - YOUR ADDRESS - OPÇÃO MR***
+DADO que foram preenchidas das informações anteriores do cadastro - YOUR PERSONAL
+QUANDO o usuario selecionou a opção "MR"
+E o usuario inseriu as informações  nos campos "Firts Name" E "Last Name" E "Company" E "Address" E "Address (Line2)"
+E tambem preencheu as informações nos campos "city" E "State" E "Country" E "Additional information" E "HomeFone" E "MobileFone" E "Assign an Address alias for future reference. *"
+ENTAO clicou em "register"
+
+***CENARIO PREENCHER INFORMAÇÕES DO CADASTRO - Your Address - OPÇÕES MR e Sign up for our newsletter!***
+DADO que foram preenchidas as informações anteriores do cadastro - YOUR PERSONAL 
+QUANDO o usuario selecionou a opção "MR" 
+E na opção "Sign up for our newsletter!"
+QUANDO o usuario inseriu as informações nos campos "Firts Name" E "Last Name" E "Company" E "Address" E "Address (Line2)" 
+E tambem preencheu as informações nos campos "city" E "State" E "Country" E "Additional information" E "HomeFone" E "MobileFone" E "Assign an address alias for future reference. *"
+Então clicou em "Register"
+
+***CENARIO PREENCHER INFORMAÇÕES DO CADASTRO - Your Address - OPÇÕES MR e Receive special Offers from our partners!***
+DADO que foram preenchidas as informações anteriores do cadastro - YOUR PERSONAL 
+QUANDO o usuario selecionou a opção "MR" 
+E na opção "Receive special Offers from our partners!"
+QUANDO o usuario inseriu as informações nos campos "Firts Name" E "Last Name" E "Company" E "Address" E "Address (Line2)" 
+E tambem preencheu as informações nos campos "city" E "State" E "Country" E "Additional information" E "HomeFone" E "MobileFone" E "Assign an address alias for future reference. *"
+Então clicou em "Register"
+
+***CENARIO PREENCHER INFORMAÇÕES DO CADASTRO - Your Address - OPÇÕES MR e TODAS OPÇÕES DO CHECKBOX
+DADO que foram preenchidas as informações anteriores do cadastro - YOUR PERSONAL 
+QUANDO o usuario selecionou a opção "MR" 
+E nas opções do checkbox "Sign up for our newsletter!" E "Receive special Offers from our partners!"
+QUANDO o usuario inseriu as informaçõe
+
+s nos campos "Firts Name" E "Last Name" E "Company" E "Address" E "Address (Line2)" 
+E tambem preencheu as informações nos campos "city" E "State" E "Country" E "Additional information" E "HomeFone" E "MobileFone" E "Assign an address alias for future reference. *"
+Então clicou em "Register"
+
